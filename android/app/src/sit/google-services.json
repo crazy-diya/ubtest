@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "499483635234",
+    "project_id": "union-bank-mobile-banking",
+    "storage_bucket": "union-bank-mobile-banking.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499483635234:android:8a9b98a0085bf4b0e8247b",
+        "android_client_info": {
+          "package_name": "com.epic.ubmobilebank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "499483635234-j2uvs801r4decgovtb2itggsukvnikbk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFp5K3zyvp6bFeNbhfVKxpw-_VvQxeK5s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "499483635234-j2uvs801r4decgovtb2itggsukvnikbk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "499483635234-d4j7uf70c8ue4534ilremn6o4rb29kia.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.epic.lk.unionBank"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

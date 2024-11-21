@@ -1,0 +1,16 @@
+//
+//  live.xcconfig
+//  Runner
+//
+//  Created by Dimuthu Lakshan on 2023-12-19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Flutter/Generated.xcconfig"
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-live.xcconfig"
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.release-live.xcconfig"
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.profile-live.xcconfig"
+
+FLUTTER_TARGET=lib/flavors/main_live.dart

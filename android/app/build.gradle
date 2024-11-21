@@ -1,0 +1,151 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+    id "dev.flutter.flutter-gradle-plugin"
+    id "com.google.gms.google-services"
+    id "com.huawei.agconnect"
+    id 'com.google.firebase.crashlytics'
+}
+
+def localProperties = new Properties()
+def localPropertiesFile = rootProject.file('local.properties')
+if (localPropertiesFile.exists()) {
+    localPropertiesFile.withReader('UTF-8') { reader ->
+        localProperties.load(reader)
+    }
+}
+
+def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
+if (flutterVersionCode == null) {
+    flutterVersionCode = '1'
+}
+
+def flutterVersionName = localProperties.getProperty('flutter.versionName')
+if (flutterVersionName == null) {
+    flutterVersionName = '1.0'
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file('/Users/epic/Documents/UBgo/keys/key.properties')
+// ''/Users/ravindu_m/EPIC LANKA/KEYS/UB_GO/key.properties'
+// '/Users/epic/Documents/UBgo/keys/key.properties'
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+
+android {
+    namespace "com.epic.ubmobilebank"
+    compileSdkVersion 34
+    ndkVersion flutter.ndkVersion
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
+    defaultConfig {
+        applicationId "com.epic.ubmobilebank"
+        minSdkVersion 24
+        targetSdkVersion 34
+        versionCode flutterVersionCode.toInteger()
+        versionName flutterVersionName
+        resourceConfigurations += ['en', 'zh-rCN']
+    }
+
+    signingConfigs {
+        release {
+            storePassword keystoreProperties['storePassword']
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+            enableV2Signing true
+        }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources true
+            signingConfig signingConfigs.release
+        }
+    }
+
+    flavorDimensions "flavor-type"
+    productFlavors {
+        dev {
+            dimension "flavor-type"
+            resValue "string", "app_name", "UnionBank DEV"
+        }
+        qa {
+            dimension "flavor-type"
+            resValue "string", "app_name", "UnionBank QA"
+        }
+        uat {
+            dimension "flavor-type"
+            resValue "string", "app_name", "UnionBank UAT"
+        }
+        live {
+            dimension "flavor-type"
+            resValue "string", "app_name", "UnionBank"
+        }
+        sit {
+            dimension "flavor-type"
+            resValue "string", "app_name", "UnionBank SIT"
+        }
+    }
+
+     configurations {
+        all {
+            exclude group: "com.madgag.spongycastle", module: "core"
+            exclude group: "com.madgag.spongycastle", module: "prov"
+            exclude group: "com.madgag.spongycastle", module: "pkix"
+        }
+    }
+}
+
+flutter {
+    source '../..'
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation platform('com.google.firebase:firebase-bom:31.3.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.android.gms:play-services-maps:2.1.1'
+
+    implementation 'com.scottyab:rootbeer-lib:0.0.8'
+    implementation "androidx.multidex:multidex:2.0.1"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'androidx.biometric:biometric:1.1.0'
+
+    //Huawei
+    implementation 'com.huawei.hms:maps:6.11.2.301'
+    implementation 'com.huawei.agconnect:agconnect-core:1.5.2.300'
+//    implementation 'com.huawei.hms:hianalytics:6.9.0.301'
+
+    //JustPay
+    implementation 'com.squareup.okhttp3:okhttp:4.9.3'
+    implementation 'com.googlecode.json-simple:json-simple:1.1'
+    implementation files('libs/LPTrustedSDK.aar')
+    implementation files('libs/pushpayment-core-sdk-2.0.2.obf.jar')
+
+}

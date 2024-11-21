@@ -1,0 +1,17 @@
+//
+//  sit.xcconfig
+//  Runner
+//
+//  Created by Dimuthu Lakshan on 2023-12-15.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+
+#include "Flutter/Generated.xcconfig"
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug-sit.xcconfig"
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.release-sit.xcconfig"
+#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.profile-sit.xcconfig"
+
+FLUTTER_TARGET=lib/flavors/main_sit.dart

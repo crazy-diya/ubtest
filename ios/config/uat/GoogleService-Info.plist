@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>499483635234-d4j7uf70c8ue4534ilremn6o4rb29kia.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.499483635234-d4j7uf70c8ue4534ilremn6o4rb29kia</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZDA7PfXKC0wZ2fL79VJ3O1Ppaps_Lnso</string>
+	<key>GCM_SENDER_ID</key>
+	<string>499483635234</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.epic.lk.unionBank</string>
+	<key>PROJECT_ID</key>
+	<string>union-bank-mobile-banking</string>
+	<key>STORAGE_BUCKET</key>
+	<string>union-bank-mobile-banking.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:499483635234:ios:15a30a4d48bd727ae8247b</string>
+</dict>
+</plist>

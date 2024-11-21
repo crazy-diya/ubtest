@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>LSSupportsOpeningDocumentsInPlace</key>
+	<true/>
+	<key>UIFileSharingEnabled</key>
+	<true/>
+	<key>NSFileProviderDomainUsageDescription</key>
+	<string>Permission required for accessing documents related to your account and transactions, ensuring secure access and management.</string>
+	<key>kTCCServiceMediaLibrary</key>
+	<string>Permission required for profile picture changes, document uploads, and saving account statements. Your data is securely stored on our servers with no sharing to third parties.</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>PermissionGroupCriticalAlerts</key>
+	<string>Permission required to send you critical banking alerts that bypass Do Not Disturb settings, ensuring you receive important notifications promptly.</string>
+	<key>PermissionGroupNotification</key>
+	<string>Permission required to send notifications about account activity, transfers, bill payments, and other essential updates.</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Permission required to save account statements or receipts to your photo library. Data is securely transferred with no third-party sharing.</string>
+	<key>CADisableMinimumFrameDurationOnPhone</key>
+	<true/>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(FLUTTER_BUILD_NAME)</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>$(FLUTTER_BUILD_NUMBER)</string>
+	<key>FirebaseMessagingAutoInitEnabled</key>
+	<false/>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>https</string>
+		<string>http</string>
+		<string>undecimus</string>
+		<string>sileo</string>
+		<string>zbra</string>
+		<string>filza</string>
+		<string>activator</string>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+		<string>cydia</string>
+		<string>zbrea</string>
+		<string>installer</string>
+		<string>rockapp</string>
+		<string>icy</string>
+		<string>saily</string>
+		<string>packix</string>
+		<string>xina</string>
+		<string>santander</string>
+		<string>apt-repo</string>
+	</array>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Permission required for accessing media files during onboarding or profile updates. No third-party sharing is involved.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_dartVmService._tcp</string>
+	</array>
+	<key>io.flutter.embedded_views_preview</key>
+	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Permission required for capturing images for KYC verification and document uploads. All data is securely stored with no external sharing.</string>
+	<key>NSFaceIDUsageDescription</key>
+	<string>Permission required for secure biometric login to enhance user authentication and security.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Permission required to access local network details, including Wi-Fi information, to improve connectivity for banking services.</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Permission required to display nearby branches, ATMs, and other banking services, ensuring compliance with security guidelines.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Permission required to display nearby branches and ATMs even when the app is running in the background, ensuring you have access to essential banking services.</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Permission required to access your location to provide banking services relevant to your region.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Permission required to access your location while using the app to find nearby branches and ATMs, ensuring you receive relevant information.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Permission required for accessing your photo library to upload documents and update profile pictures. Data is securely handled with no third-party sharing.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>Permission required to import contacts for payment transfers or to share banking information securely.</string>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
+	<key>FirebaseAppDelegateProxyEnabled</key>
+	<string>NO</string>
+	<key>FirebaseCrashlyticsCollectionEnabled</key>
+	<false/>
+	<key>NSUserActivityTypes</key>
+	<array>
+		<string>INSendMessageIntent</string>
+	</array>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>fetch</string>
+		<string>remote-notification</string>
+	</array>
+</dict>
+</plist>
